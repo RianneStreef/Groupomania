@@ -1,0 +1,8 @@
+<div>{{ title }}</div>
+<button [disabled]="isButtonDisabled" (click)="addServer()">
+  {{ buttonText }}
+</button>
+<div>Server Added: {{ isServerAdded }}</div>
+<input type="text" [(ngModel)]="serverName" />
+<!-- <input type="text" (input)="handleChange($event)" /> -->
+<div>{{ serverName }}</div>
