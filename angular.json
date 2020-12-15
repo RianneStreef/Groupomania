@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Groupomania"
+    }
+  },
+  "defaultProject": "Groupomania",
+  "cli": {
+    "analytics": "c78cca03-e15f-4aab-8ec2-99849a3f56df"
+  }
 }
