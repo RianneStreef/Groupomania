@@ -1,7 +1,28 @@
 <div class="header">
   <img src="../../assets/img/icon-black.png" alt="Groupomania logo" />
   <div class="headerButtons">
-    <app-button></app-button>
-    <app-button></app-button>
+    <app-button buttonText="Button 1"></app-button>
+    <app-button buttonText="Button 2"></app-button>
+    <app-button (click)="changeLoginStatus()" buttonText="Login"></app-button>
+    <div>isLoggedIn: {{ isLoggedIn }}</div>
+    <div *ngIf="isLoggedIn; else loggedOutMessage">Hello {{ name }}!</div>
+    <ng-template #loggedOutMessage>
+      <div>{{ name }} must login again.</div>
+    </ng-template>
+    <!-- CSS styles change from snake-case to camelCase -->
+    <!-- background-color in CSS becomes backgroundColor -->
+    <div
+      [ngStyle]="{ backgroundColor: isLoggedIn ? 'green' : 'red' }"
+      buttonText="Change Style"
+    >
+      I WILL CHANGE COLOR
+    </div>
+    <div [ngStyle]="{ backgroundColor: getColor() }" buttonText="Change Style">
+      I WILL CHANGE COLOR
+    </div>
+    <!-- Key will the name of the class -->
+    <div [ngClass]="{ test: isLoggedIn }" buttonText="Change Style">
+      I WILL CHANGE CLASSES
+    </div>
   </div>
 </div>
