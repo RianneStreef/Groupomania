@@ -3,4 +3,21 @@ body {
   margin: 0;
   background-color: #e5e5e5;
   font-family: Montserrat;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 100%;
 }

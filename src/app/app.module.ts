@@ -10,6 +10,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ArticleComponent } from './article/article.component';
 import { MessageComponent } from './message/message.component';
+import { AsideComponent } from './aside/aside.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MessageComponent } from './message/message.component';
     SignUpComponent,
     ProfileComponent,
     ArticleComponent,
-    MessageComponent
+    MessageComponent,
+    AsideComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
